@@ -46,15 +46,13 @@ a:hover {
   padding: 16px 24px;
   border-radius: 4px;
   display: inline-block;
-  color: #2bdb74;
-  text-decoration: #78d8c0;
+  text-decoration: none;
   background-color: #011108;
 }
 
 .btn:hover {
   background-color: #BF2237;
   transition-duration: 5s;
-  color-adjust: initial;
   color: #212922;
 }
 
@@ -64,7 +62,7 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 1;
   object-fit: cover;
 }
 
@@ -88,24 +86,26 @@ a:hover {
 
 .container {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 960px) {
-  .container {
-    width: 700px;
+  .card-white {
+    width: 90%;
   }
 }
 @media (max-width: 720px) {
-  .container {
-    width: 500px;
+  .card-white {
+    width: 80%;
   }
 }
 @media (max-width: 540px) {
-  .container {
-    width: 300px;
+  .card-white {
+    width: 70%;
   }
 }
